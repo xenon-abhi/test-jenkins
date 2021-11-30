@@ -3,9 +3,7 @@ os: linux
 files:
   - source: /index.html
     destination: /var/www/html/
-  - source: /README.md
-    destination: /var/www/html/
-hooks:
+  hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
       timeout: 300
